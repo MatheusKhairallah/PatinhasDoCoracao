@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  /*Fomulário*/
+  form {
+    display: flex;
+    flex-flow: column;
+    background-color: #F23838;
+    border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 50px; margin: 5px 10px;
+    padding: 50px 100px;
+  }
+  
+  input, button, a {
+    outline: none;
+  }
+  
+  .linha {
+    display: flex;
+    flex-flow: row; /* column = form vertical, row = form horizontal */
+  }
+  
+  /*Esquecimento de senha*/
+  #linha_4, a {
+    text-align: center;
+    font-size: 20px;
+    color: #0D0D0D;
+  }
+  
+  /*Entrar*/
+  button, #linha_3 {
+    text-align: center;
+    border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
+    font-size: 20px;
+    color: #0D0D0D;
+    font-weight: bold;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  button:hover {
+    color: #F23838;
+    background-color: #0D0D0D;
+    transition: font-size 30px;
+    transform: perspective(100px) translateZ(15px);
+  }
+  
+  /*Logotipo do site*/
+  img {
+    position: absolute;
+    width: 230px;
+    height: 180px;
+    left: 560px;
+    top: 0px;
+  }
+  
+  /*Campo de preenchimento*/
+  input {
+    border-width: 2px; border-style: solid; border-color: #F23838; border-radius: 10px; margin: 5px 10px;
+    font-size: 30px;
+  }
+  
+  /*Email e Senha*/
+  .linha_2 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0D0D0D;
+  }

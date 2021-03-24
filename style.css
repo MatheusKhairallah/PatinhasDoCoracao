@@ -39,6 +39,10 @@ button:hover {
     transition-duration: 0.3s;
 }
 
+button {
+    outline: none;
+}
+
 /*Cadastro*/
 h2 {
     width: 148px;
