@@ -1,36 +1,72 @@
+/*Holy grail*/
 body {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
     font-family: 'Pangolin', cursive;
+}
+
+footer {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.hg-conteudo > nav {
+    order: -1;
+    text-align: center;
+}
+
+.hg-conteudo > main {
+    flex: 1;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hg-conteudo {
+        flex-flow: row;
+    }
+
+    .hg-conteudo > aside,
+    .hg-conteudo > nav {
+        flex: 0 0 200px;
+    }
 }
 
 /*Logo do site*/
 #logotipo {
-    width: 157px;
-    height: 155px;
-    margin-left: 15px;
+    width: 100px;
+    height: 100px;
 }
 
 /*Titulo do site*/
-h1 {
-    position: absolute;
-    left: 243px;
-    top: 45px;
+#patinhas {
+    margin-left: 110px;
+    margin-top: -70px;
 }
 
 /*Menu*/
-button {
+.menu {
     font-size: 25px;
     text-align: center;
     background-color: #F23838;
     color: #0D0D0D;
     margin-top: 30px;
-    margin-left: 52px;
+    margin-left: 22px;
     width: 86px;
     border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 20px;
     transition: all 1s ease 0s;
     font-family: 'Pangolin', cursive;
 }
 
-button:hover {
+.menu:hover {
     font-size: 27px;
     color: #F23838;
     background-color: #0D0D0D;
@@ -44,84 +80,78 @@ button {
 }
 
 /*Cadastro*/
-h2 {
-    width: 148px;
-    left: 1198px;
-    top: 0px;
-    font-size: 20px;
-    position: absolute;
+#Cadastro {
+    display: flex;
+    flex: content;
+    align-items: center;
 }
 
-a {
+h2 {
+    width: 148px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+a:link {
     color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
 }
 
 /*Icone*/
 #usuario {
-    width: 148px;
-    left: 1156px;
-    top: 20px;
     font-size: 38px;
-    position: absolute; 
+    margin-left: 10px;
 }
 
 #patinha {
-    margin-left: 62px;
+    margin-left: 22px;
     font-size: 80px;
     margin-top: 50px;
 }
 
 /*Cães*/
 #cão1 {
-    position: absolute;
-    width: 210px;
-    height: 164px;
-    left: 299px;
-    top: 180px;
-    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin-top: 2%;
+    margin-right: 10vh;
+    border-radius: 30%;
 }
 
 #cão2 {
-    position: absolute;
-    width: 210px;
-    height: 164px;
-    left: 599px;
-    top: 180px;
-    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border-radius: 30%;
 }
 
 #cão3 {
-    position: absolute;
-    width: 210px;
-    height: 164px;
-    left: 899px;
-    top: 180px;
-    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin-top: 3%;
+    margin-right: 10vh;
+    border-radius: 30%;
 }
 
 #cão4 {
-    position: absolute;
-    width: 210px;
-    height: 164px;
-    left: 299px;
-    top: 400px;
-    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border-radius: 30%;
 }
 
-#cão5 {
-    position: absolute;
-    width: 210px;
-    height: 164px;
-    left: 599px;
-    top: 400px;
-    border-radius: 50%;
+/*Companhia*/
+#thoth {
+    width: 160px;
+    height: 160px;
+    margin-left: -35px;
 }
 
-#cão6 {
-    position: absolute;
-    width: 210px;
-    height: 164px;
-    left: 899px;
-    top: 400px;
-    border-radius: 50%;
+#empresa{
+    display: flex;
+    flex: content;
+    align-items: center;
 }

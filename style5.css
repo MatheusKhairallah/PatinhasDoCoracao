@@ -1,13 +1,132 @@
 body {
-    margin: 0;
-    min-height: 120vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Pangolin', cursive;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  font-family: 'Pangolin', cursive;
+}
+
+footer {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.hg-conteudo {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.hg-conteudo > nav {
+  order: -1;
+  text-align: center;
+}
+
+.hg-conteudo > main {
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hg-conteudo {
+      flex-flow: row;
   }
-  
-  /*Fomulário*/
+
+  .hg-conteudo > aside,
+  .hg-conteudo > nav {
+      flex: 0 0 200px;
+  }
+}
+
+/*Logo do site*/
+#logotipo {
+  width: 100px;
+  height: 100px;
+}
+
+/*Titulo do site*/
+#patinhas {
+  margin-left: 110px;
+  margin-top: -70px;
+}
+
+/*Menu*/
+.menu {
+  font-size: 25px;
+  text-align: center;
+  background-color: #F23838;
+  color: #0D0D0D;
+  margin-top: 30px;
+  margin-left: 22px;
+  width: 86px;
+  border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 20px;
+  transition: all 1s ease 0s;
+  font-family: 'Pangolin', cursive;
+}
+
+.menu:hover {
+  font-size: 27px;
+  color: #F23838;
+  background-color: #0D0D0D;
+  border-color: #0D0D0D;
+  border-width: 3px;
+  transition-duration: 0.3s;
+}
+
+button {
+  outline: none;
+}
+
+/*Cadastro*/
+#Cadastro {
+  display: flex;
+  flex: content;
+  align-items: center;
+}
+
+h2 {
+  width: 148px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/*Icone*/
+#usuario {
+  font-size: 38px;
+  margin-left: 10px;
+}
+
+#patinha {
+  margin-left: 22px;
+  font-size: 80px;
+  margin-top: 50px;
+}
+
+/*Companhia*/
+#thoth {
+  width: 160px;
+  height: 160px;
+  margin-left: -35px;
+}
+
+#empresa{
+  display: flex;
+  flex: content;
+  align-items: center;
+}
+
+/*Fomulário*/
   form {
     display: flex;
     flex-flow: column;
@@ -22,7 +141,7 @@ body {
   
   .linha {
     display: flex;
-    flex-flow: row; /* column = form vertical, row = form horizontal */
+    flex-flow: row;
   }
   
   /*Esquecimento de senha*/
@@ -31,9 +150,19 @@ body {
     font-size: 20px;
     color: #0D0D0D;
   }
+
+  a:link {
+    color: #0D0D0D;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #0D0D0D;
+    text-decoration: none;
+  }
   
   /*Entrar*/
-  button, #linha_3 {
+  #entrar, #linha_3 {
     text-align: center;
     border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
     font-size: 20px;
@@ -42,20 +171,11 @@ body {
     font-family: 'Pangolin', cursive;
   }
   
-  button:hover {
+  #entrar:hover {
     color: #F23838;
     background-color: #0D0D0D;
     transition: font-size 30px;
     transform: perspective(100px) translateZ(15px);
-  }
-  
-  /*Logotipo do site*/
-  img {
-    position: absolute;
-    width: 230px;
-    height: 180px;
-    left: 560px;
-    top: 0px;
   }
   
   /*Campo de preenchimento*/

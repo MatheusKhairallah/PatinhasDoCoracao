@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+/*Menu*/
+.hg-conteudo > nav {
+    order: -1;
+    background-color: cyan;
+}
+
+/*Conteúdo Principal*/
+.hg-conteudo > main {
+    flex: 1;
+    background-color: yellow;
+}
+
+/*Conteúdo Secundário*/
+@media (min-width: 768px) {
+    .hg-conteudo {
+        flex-flow: row;
+        background-color: gray;
+    }
+
+    .hg-conteudo > aside,
+    .hg-conteudo > nav {
+        flex: 0 0 200px;
+    }
+}
