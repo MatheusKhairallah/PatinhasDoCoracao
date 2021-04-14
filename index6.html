@@ -2,31 +2,84 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar</title>
     <link rel="stylesheet" href="style6.css">
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script>
-        function apertar() {
-          alert("Registrado com Sucesso!");
-        }
-        </script>
-    
-
-    <title>CADASTRAR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
 <body>
-   
-    <form class="box" action="index.html" method="post">
-        <h2>TELA DE CADASTRO</h2>
-        <input type="text" name="nome" placeholder="insira seu nome">
-        <input type="number" name="CPF" placeholder="insira seu CPF">
-        <input type="password" name="password" placeholder="insira sua senha">
-        <button type="submit" class="btn btn-info" onclick="apertar()">CADASTRAR</button>
+    <!--Holy Grail Layout-->
+    <header>
+        <!--Logotipo do site-->
+        <a href="index.html">
+            <img id="logotipo" src="20201021_220949.png" alt="Logotipo Patinhas">
+        </a>
 
-    </form>
-       
+        <!--Nome do site-->
+        <h1 id="patinhas">Patinhas do Coração</h1>
+    </header>
+
+    <div class="hg-conteudo">
+        <main>
+            <!--Fomulário de cadastro-->
+            <form>
+                <div class="linha_2">
+                    <input type="text" name="nome" placeholder="insira seu nome" id="nome">
+                </div>
+                <div class="linha_2">
+                    <input type="number" name="CPF" placeholder="insira seu CPF" id="CPF">
+                </div>
+                <div class="linha_2">
+                    <input type="password" name="password" placeholder="insira sua senha" id="senha">
+                </div>
+                <div class="linha_3">
+                    <button id="cadastrar" type="submit">Cadastrar</button>
+                </div>
+                <br />
+            </form>
+        </main>
+
+        <nav>
+            <!--Menu-->
+            <div>
+                <a href="index2.html">
+                    <button class="menu" type="submit">Meu Perfil</button>
+                </a>  
+            <div>
+        
+            <div>
+                <a href="index3.html">
+                    <button class="menu" type="submit">Perfil do Cão</button>
+                </a>
+            </div>
+            
+            <div>
+                <a href="index4.html">
+                    <button class="menu" type="submit">Filtros</button>
+                </a>
+            </div>
+            
+            <!--Icone patinha-->
+            <i id="patinha" class="fas fa-paw"></i>
+        </nav>
+
+        <aside>
+            <!--Cadastro do usuário-->
+            <div id="Cadastro">
+                <i id="usuario" class="fas fa-user"></i>
+                <h2>Faça
+                    <a href="index5.html">login</a>, ou <a href="index6.html">cadastre-se</a>
+                </h2>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <!--Nome e Logo da empresa-->
+        <div id="empresa">
+            Companhia Thoth - <img id="thoth" src="20201021_220352.png" alt="Logotipo Thoth">
+        </div>
+    </footer>   
 </body>
 </html>
