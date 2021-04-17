@@ -127,42 +127,24 @@ a:visited {
 }
 
 /*Fomulário*/
-  form {
-    display: flex;
-    flex-flow: column;
-    background-color: #F23838;
-    border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 50px; margin: 5px 10px;
-    padding: 50px 100px;
-  }
+form {
+  display: flex;
+  flex-flow: column;
+  border-width: 3px; border-style: solid; border-color: #F23838; border-radius: 50px; margin: 5px 10px;
+  padding: 50px 100px;
+}
   
-  input, button, a {
-    outline: none;
-  }
+input, button, a {
+  outline: none;
+}
   
-  .linha {
-    display: flex;
-    flex-flow: row;
-  }
-  
-  /*Esquecimento de senha*/
-  #linha_4, a {
-    text-align: center;
-    font-size: 20px;
-    color: #0D0D0D;
-  }
+.linha {
+  display: flex;
+  flex-flow: row;
+}
 
-  a:link {
-    color: #0D0D0D;
-    text-decoration: none;
-  }
-
-  a:visited {
-    color: #0D0D0D;
-    text-decoration: none;
-  }
-  
-  /*Entrar*/
-  #entrar, #linha_3 {
+/*Cadastrar*/
+#cadastrar {
     text-align: center;
     border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
     font-size: 20px;
@@ -171,7 +153,7 @@ a:visited {
     font-family: 'Pangolin', cursive;
   }
   
-  #entrar:hover {
+  #cadastrar:hover {
     color: #F23838;
     background-color: #0D0D0D;
     transition: font-size 30px;
@@ -184,7 +166,7 @@ a:visited {
     font-size: 30px;
   }
   
-  /*Email e Senha*/
+  /*Nome, CPF e Senha*/
   .linha_2 {
     margin: 10px;
     font-size: 20px;
