@@ -1,0 +1,145 @@
+/*Holy grail*/
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Pangolin', cursive;
+
+    background-image: url(20210416_220943.png);
+    background-position: 115px;
+    background-size: 1100px;
+}
+
+header {
+    background-color: rgba(192, 192, 192, 0.699);
+}
+
+footer {
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgba(192, 192, 192, 0.699);
+}
+
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(192, 192, 192, 0.699);
+}
+
+.hg-conteudo > nav {
+    order: -1;
+    text-align: center;
+}
+
+.hg-conteudo > main {
+    flex: 1;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .hg-conteudo {
+        flex-flow: row;
+    }
+
+    .hg-conteudo > aside,
+    .hg-conteudo > nav {
+        flex: 0 0 200px;
+    }
+}
+
+/*Logo do site*/
+#logotipo {
+    width: 100px;
+    height: 100px;
+}
+
+/*Titulo do site*/
+#patinhas {
+    margin-left: 110px;
+    margin-top: -70px;
+}
+
+/*Menu*/
+.menu {
+    font-size: 25px;
+    text-align: center;
+    background-color: #F23838;
+    color: #0D0D0D;
+    margin-top: 30px;
+    margin-left: 22px;
+    width: 86px;
+    border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 20px;
+    transition: all 1s ease 0s;
+    font-family: 'Pangolin', cursive;
+}
+
+.menu:hover {
+    font-size: 27px;
+    color: #F23838;
+    background-color: #0D0D0D;
+    border-color: #0D0D0D;
+    border-width: 3px;
+    transition-duration: 0.3s;
+}
+
+button {
+    outline: none;
+}
+
+/*Cadastro*/
+#Cadastro {
+    display: flex;
+    flex: content;
+    align-items: center;
+}
+
+h2 {
+    width: 148px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/*Icone*/
+#usuario {
+    font-size: 38px;
+    margin-left: 10px;
+}
+
+#patinha {
+    margin-left: 22px;
+    font-size: 80px;
+    margin-top: 50px;
+}
+
+#mais {
+    margin-top: 160px;
+    margin-left: 50px;
+    font-size: 50px;
+    background-color: #F23838;
+    border-width: 8px; border-style: solid; border-color: #F23838; border-radius: 50%;
+}
+
+/*Companhia*/
+#empresa{
+    display: flex;
+    flex: content;
+    align-items: center;
+}
+
+li {
+    font-size: 30px;
+    margin-top: 50px;
+}

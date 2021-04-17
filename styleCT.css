@@ -5,17 +5,27 @@ body {
   display: flex;
   flex-flow: column;
   font-family: 'Pangolin', cursive;
+
+  background-image: url(20210416_220943.png);
+  background-position: 115px;
+  background-size: 1100px;
+}
+
+header {
+  background-color: rgba(192, 192, 192, 0.699);
 }
 
 footer {
   font-weight: bold;
   font-size: 25px;
+  background-color: rgba(192, 192, 192, 0.699);
 }
 
 .hg-conteudo {
   flex: 1;
   display: flex;
   flex-flow: column;
+  background-color: rgba(192, 192, 192, 0.699);
 }
 
 .hg-conteudo > nav {
@@ -130,8 +140,7 @@ a:visited {
 form {
   display: flex;
   flex-flow: column;
-  border-width: 3px; border-style: solid; border-color: #F23838; border-radius: 50px; margin: 5px 10px;
-  padding: 50px 100px;
+  margin: 60px 150px;
 }
   
 input, button, a {
@@ -146,7 +155,7 @@ input, button, a {
 /*Cadastrar*/
 #cadastrar {
     text-align: center;
-    border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
+    border-width: 1px; border-style: solid; border-color: #0D0D0D; border-radius: 10px; padding: 10px 50px;
     font-size: 20px;
     color: #0D0D0D;
     font-weight: bold;
@@ -162,8 +171,9 @@ input, button, a {
   
   /*Campo de preenchimento*/
   input {
-    border-width: 2px; border-style: solid; border-color: #F23838; border-radius: 10px; margin: 5px 10px;
+    border-width: 2px; border-style: solid; border-color: #0D0D0D; border-radius: 10px; margin: 5px 10px;
     font-size: 30px;
+    padding: 8px;
   }
   
   /*Nome, CPF e Senha*/

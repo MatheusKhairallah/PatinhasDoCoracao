@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtragem</title>
+    <link rel="stylesheet" href="styleFT.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Holy Grail Layout-->
+    <header>
+        <!--Logotipo do site-->
+        <a href="indexPI.html">
+            <img id="logotipo" src="20201021_220949.png" alt="Logotipo Patinhas">
+        </a>
+  
+        <!--Nome do site-->
+        <h1 id="patinhas">Patinhas do Coração</h1>
+    </header>
+  
+    <div class="hg-conteudo">
+        <main>
+            <form>
+                <div class="linha_2">
+                    <select name="raca" id="raca">
+                        <option selected>Raça</option>
+                        <option value="1">Pastor-alemão</option>
+                        <option value="2">Buldogue</option>
+                        <option value="3">Poodle</option>
+                        <option value="4">Labrador retriever</option>
+                        <option value="5">Golden retriever</option>
+                    </select>
+                </div>
+                <div class="linha_2">
+                    <select name="porte" id="porte">
+                        <option selected>Porte</option>
+                        <option value="1">Gigante</option>
+                        <option value="2">Grande</option>
+                        <option value="3">Médio</option>
+                        <option value="4">Pequeno</option>
+                        <option value="5">Mini</option>
+                    </select>
+                </div>
+                <div id="linha_3">
+                    <button id="filtrar" type="submit">Filtrar</button>
+                </div>
+                <br />
+            </form>
+        </main>
+  
+        <nav>
+            <!--Menu-->
+            <div>
+                <a href="indexPU.html">
+                    <button class="menu" type="submit">Meu Perfil</button>
+                </a>  
+            <div>
+        
+            <div>
+                <a href="indexPC.html">
+                    <button class="menu" type="submit">Perfil do Cão</button>
+                </a>
+            </div>
+            
+            <div>
+                <a href="indexFT.html">
+                    <button class="menu" type="submit">Filtros</button>
+                </a>
+            </div>
+            
+            <!--Icone patinha-->
+            <i id="patinha" class="fas fa-paw"></i>
+        </nav>
+  
+        <aside>
+            <!--Cadastro do usuário-->
+            <div id="Cadastro">
+                <i id="usuario" class="fas fa-user"></i>
+                <h2>Faça
+                    <a href="indexLG.html">login</a>, ou <a href="indexCT.html">cadastre-se</a>
+                </h2>
+            </div>
+        </aside>
+    </div>
+  
+    <footer>
+        <!--Nome e Logo da empresa-->
+        <div id="empresa">
+            Companhia Thoth
+        </div>
+    </footer>
+</body>
+</html>

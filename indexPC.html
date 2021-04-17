@@ -2,9 +2,10 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar</title>
-    <link rel="stylesheet" href="Cadastro.css">
+    <title>Lista dos cães</title>
+    <link rel="stylesheet" href="stylePC.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +13,7 @@
     <!--Holy Grail Layout-->
     <header>
         <!--Logotipo do site-->
-        <a href="PáginaInicial.html">
+        <a href="indexPI.html">
             <img id="logotipo" src="20201021_220949.png" alt="Logotipo Patinhas">
         </a>
 
@@ -22,40 +23,33 @@
 
     <div class="hg-conteudo">
         <main>
-            <!--Fomulário de cadastro-->
-            <form>
-                <div class="linha_2">
-                    <input type="text" name="nome" placeholder="insira seu nome" id="nome">
-                </div>
-                <div class="linha_2">
-                    <input type="text" name="email" placeholder="insira seu E-mail" id="email">
-                </div>
-                <div class="linha_2">
-                    <input type="password" name="password" placeholder="insira sua senha" id="senha">
-                </div>
-                <div class="linha_3">
-                    <button id="cadastrar" type="submit">Cadastrar</button>
-                </div>
-                <br />
-            </form>
+           <ul>
+               <li>Cachorro 1</li>
+           </ul>
+
+           <ul>
+               <li>Cachorro 2</li>
+           </ul>
+
+           <i id="mais" class="fas fa-plus"></i>
         </main>
 
         <nav>
             <!--Menu-->
             <div>
-                <a href="PerfilDoUsuário.html">
+                <a href="indexPU.html">
                     <button class="menu" type="submit">Meu Perfil</button>
                 </a>  
             <div>
         
             <div>
-                <a href="PerfilDoCão.html">
+                <a href="indexPC.html">
                     <button class="menu" type="submit">Perfil do Cão</button>
                 </a>
             </div>
             
             <div>
-                <a href="Filtro.html">
+                <a href="indexFT.html">
                     <button class="menu" type="submit">Filtros</button>
                 </a>
             </div>
@@ -69,7 +63,7 @@
             <div id="Cadastro">
                 <i id="usuario" class="fas fa-user"></i>
                 <h2>Faça
-                    <a href="Login.html">login</a>, ou <a href="Cadastro.html">cadastre-se</a>
+                    <a href="indexLG.html">login</a>, ou <a href="indexCT.html">cadastre-se</a>
                 </h2>
             </div>
         </aside>
@@ -80,6 +74,6 @@
         <div id="empresa">
             Companhia Thoth
         </div>
-    </footer>   
+    </footer>
 </body>
 </html>
