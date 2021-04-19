@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil do Usuário</title>
+    <title>Anúncio do cão</title>
     <link rel="shortcut icon" href="imageFaviconPage.png" type="image/x-icon" />
-    <link rel="stylesheet" href="stylePU.css">
+    <link rel="stylesheet" href="styleAC.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
@@ -23,34 +23,55 @@
 
     <div class="hg-conteudo">
         <main>
-            <div id="imageUser">
-                <img id="imagemPerfilUser" src="imagePerfilUser.jpg" alt="Imagem de perfil do usuário" />
+            <div id="bloco1">
+                <div id="imagePet">
+                    <img id="imagemPetUser" src="pexels-charles-roth-2797318.jpg" alt="Imagem do PET anunciado" />
+                </div>
+                    <div id="dadosDoPet">
+                        <div class="dados">
+                            <label for="nomeUser">Nome:</label>
+                            <div id="nomeUser">Totó</div>
+                        </div>
+                        <div class="dados">
+                            <label for="racaPet">Raça:</label>
+                            <div id="racaPet">Dobermann</div>
+                        </div>
+                        <div class="dados">
+                            <label for="idadePet">Idade:</label>
+                            <div id="idadePet">3</div>
+                        </div>
+                        <div class="dados">
+                            <label for="localPet">Localização:</label>
+                            <div id="localPet">Mongaguá</div>
+                        </div>
+                    </div>
             </div>
-                <div id="dadosDoUsuario">
+            <div id="bloco2">
+                <h3>Dados complementares:</h3>
                     <div class="dados">
-                        <label for="nomeUser">Nome:</label>
-                        <div id="nomeUser">Usuário 1</div>
+                        <label for="portePet">Porte:</label>
+                        <div id="portePet">Médio</div>
                     </div>
                     <div class="dados">
-                        <label for="idadeUser">Idade:</label>
-                        <div id="idadeUser">25</div>
+                        <label for="vermifugado">Vermifugado:</label>
+                        <div id="vermifugado">Sim</div>
                     </div>
                     <div class="dados">
-                        <label for="localUser">Localização:</label>
-                        <div id="localUser">Mongaguá</div>
+                        <label for="Castrado">Castrado:</label>
+                        <div id="castrado">Não</div>
                     </div>
                     <div class="dados">
-                        <label for="emailUser">E-mail:</label>
-                        <div id="emailUser">usuario1@patinhasdocoracao.com.br</div>
+                        <label for="vacinas">Vacinas:</label>
+                        <div id="vacinas">V10 / Gripe Canina / Anti-rábica</div>
                     </div>
                     <div class="dados">
-                        <label for="telefoneUser">Telefone:</label>
-                        <div id="telefoneUser">(13) 99999-99999</div>
+                        <label for="temperamento">Temperamento:</label>
+                        <div id="temperamento">Dócil, Gosta de crianças</div>
                     </div>
                 </div>
                 <div id="modifyPerfil">
                     <a href="#">
-                        <button class="menuButton" type="submit">Modificar Perfil</button>
+                        <button class="menuButton" type="submit">Quero adotar</button>
                     </a>
                 </div>
         </main>

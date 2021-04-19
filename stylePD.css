@@ -131,25 +131,46 @@ a:visited {
     align-items: center;
 }
 
-#imageUser {
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+#bloco1 {
+    display: flex;
+    flex-flow: row;
+}
+
+#bloco2 {
+    display: flex;
+    flex-flow: column;
+}
+
+#imagePet {
     margin: 25px;
 }
 
-#imagemPerfilUser {
+#imagemPetUser {
     display: flex;
     align-items: initial;
-    width: 150px;
+    /* width: 150px; */
     border-radius: 7px;
+    max-block-size: 150px;
 }
 
-#dadosDoUsuario {
+#dadosDoPet {
     display: flex;
     flex-flow: column;
     text-align: left;
 }
 
+h3 {
+    margin-left: 20px;
+    text-align: left;
+}
+
 label {
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .dados {
@@ -158,7 +179,7 @@ label {
     margin: 15px;
 }
 
-.menuButton {
+.modifyButton {
     width: 200px;
     font-size: 20px;
     text-align: center;
