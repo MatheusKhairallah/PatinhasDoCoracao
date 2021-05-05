@@ -5,28 +5,19 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
-    font-family: 'Pangolin', cursive;
-
-    background-image: url(20210416_220943.png);
-    background-position: 115px;
-    background-size: 1100px;
-}
-
-header {
-    background-color: rgba(192, 192, 192, 0.699);
+    font-family: 'Pangolin', cursive;    
 }
 
 footer {
     font-weight: bold;
     font-size: 25px;
-    background-color: rgba(192, 192, 192, 0.699);
+    text-align: center;
 }
 
 .hg-conteudo {
     flex: 1;
     display: flex;
     flex-flow: column;
-    background-color: rgba(192, 192, 192, 0.699);
 }
 
 .hg-conteudo > nav {
@@ -64,24 +55,20 @@ footer {
 
 /*Menu*/
 .menu {
-    font-size: 25px;
+    width: 200px;
+    font-size: 28px;
     text-align: center;
     background-color: #F23838;
     color: #0D0D0D;
     margin-top: 30px;
     margin-left: 22px;
-    width: 86px;
-    border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 20px;
+    border-style: none; border-radius: 20px;
     transition: all 1s ease 0s;
     font-family: 'Pangolin', cursive;
 }
 
 .menu:hover {
-    font-size: 27px;
-    color: #F23838;
-    background-color: #0D0D0D;
-    border-color: #0D0D0D;
-    border-width: 3px;
+    color: whitesmoke;
     transition-duration: 0.3s;
 }
 
@@ -118,44 +105,31 @@ a:visited {
     margin-left: 10px;
 }
 
-#patinha {
-    margin-left: 22px;
-    font-size: 80px;
-    margin-top: 50px;
-}
-
 /*Cães*/
 #cão1 {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     margin-top: 2%;
     margin-right: 10vh;
-    border-radius: 30%;
+    border-radius: 15%;
 }
 
 #cão2 {
-    width: 220px;
-    height: 220px;
-    border-radius: 30%;
+    width: 180px;
+    height: 180px;
+    border-radius: 15%;
 }
 
 #cão3 {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     margin-top: 3%;
     margin-right: 10vh;
-    border-radius: 30%;
+    border-radius: 15%;
 }
 
 #cão4 {
-    width: 220px;
-    height: 220px;
-    border-radius: 30%;
-}
-
-/*Companhia*/
-#empresa{
-    display: flex;
-    flex: content;
-    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 15%;
 }
