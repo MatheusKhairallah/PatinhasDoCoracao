@@ -7,6 +7,10 @@ body {
   font-family: 'Pangolin', cursive;
 }
 
+header {
+  text-align: center;
+}
+
 footer {
   font-weight: bold;
   font-size: 25px;
@@ -42,66 +46,8 @@ footer {
 
 /*Logo do site*/
 #logotipo {
-  width: 100px;
-  height: 100px;
-}
-
-/*Titulo do site*/
-#patinhas {
-  margin-left: 110px;
-  margin-top: -70px;
-}
-
-/*Menu*/
-.menu {
-  width: 200px;
-  font-size: 28px;
-  text-align: center;
-  background-color: #F23838;
-  color: #0D0D0D;
-  margin-top: 30px;
-  margin-left: 22px;
-  border-style: none; border-radius: 20px;
-  transition: all 1s ease 0s;
-  font-family: 'Pangolin', cursive;
-}
-
-.menu:hover {
-  color: whitesmoke;
-  transition-duration: 0.3s;
-}
-
-button {
-  outline: none;
-}
-
-/*Cadastro*/
-#Cadastro {
-  display: flex;
-  flex: content;
-  align-items: center;
-}
-
-h2 {
-  width: 148px;
-  margin-left: 20px;
-  font-size: 20px;
-}
-
-a:link {
-  color: black;
-  text-decoration: none;
-}
-
-a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-/*Icone*/
-#usuario {
-  font-size: 38px;
-  margin-left: 10px;
+  width: 120px;
+  height: 120px;
 }
 
 /*Fomulário*/
@@ -115,13 +61,8 @@ a:visited {
     outline: none;
   }
   
-  .linha {
-    display: flex;
-    flex-flow: row;
-  }
-  
   /*Esquecimento de senha*/
-  #linha_4, a {
+  #Campo_Preenchimento3, a {
     text-align: center;
     font-size: 20px;
     color: #0D0D0D;
@@ -162,7 +103,7 @@ a:visited {
   }
   
   /*Email e Senha*/
-  .linha_2 {
+  .Campo_Preenchimento {
     margin: 10px;
     font-size: 20px;
     font-weight: bold;

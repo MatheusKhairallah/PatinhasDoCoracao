@@ -12,61 +12,40 @@
 <body>
     <!--Holy Grail Layout-->
     <header>
-        <!--Logotipo do site-->
-        <a href="index.html">
-            <img id="logotipo" src="20201021_220949.png" alt="Logotipo Patinhas">
-        </a>
-
-        <!--Nome do site-->
-        <h1 id="patinhas">Patinhas do Coração</h1>
+        <!--Logo tipo do site-->
+        <img id="logotipo" src="20201021_220949.png" alt="Logotipo do site">
     </header>
 
     <div class="hg-conteudo">
         <main>
-            <!--Anúncio dos cães-->
-            <div>
-                <a href="indexAC.html">
-                    <img id="cão1" src="pexels-charles-roth-2797318.jpg" alt="Foto de cão">
-                </a>
-                <img id="cão2" src="pexels-helena-lopes-3714060.jpg" alt="Foto de cão">
-            </div>
-
-            <div>
-                <img id="cão3" src="pexels-josh-hild-2820134.jpg" alt="Foto de cão">
-                <img id="cão4" src="pexels-julissa-helmuth-3726314.jpg" alt="Foto de cão">
-            </div>
+            <!--Fomulário de cadastro-->
+            <form>
+                <div class="Campo_Preenchimento">
+                    <input type="text" name="nome" placeholder="insira seu nome" id="nome">
+                </div>
+                <div class="Campo_Preenchimento">
+                    <input type="text" name="email" placeholder="insira seu E-mail" id="email">
+                </div>
+                <div class="Campo_Preenchimento">
+                    <input type="password" name="password" placeholder="insira sua senha" id="senha">
+                </div>
+                <div class="Campo_Preenchimento2">
+                    <button id="cadastrar" type="submit">Cadastrar</button>
+                </div>
+                <br />
+            </form>
         </main>
 
         <nav>
             <!--Menu-->
-            <div>
-                <a href="indexPU.html">
-                    <button class="menu" type="submit">Meu Perfil</button>
-                </a>  
-            <div>
-        
-            <div>
-                <a href="indexPC.html">
-                    <button class="menu" type="submit">Perfil do Cão</button>
-                </a>
-            </div>
-            
-            <div>
-                <a href="indexFT.html">
-                    <button class="menu" type="submit">Filtros</button>
-                </a>
-            </div>
+            <h2>Patinhas do coração</h2>
+            <p>
+                Bem vindo usuário! Neste site você poderá doar ou adotar um cão! Então boa 
+                sorte noque procura
+            </p>
         </nav>
 
-        <aside>
-            <!--Cadastro do usuário-->
-            <div id="Cadastro">
-                <i id="usuario" class="fas fa-user"></i>
-                <h2>Faça
-                    <a href="indexLG.html">login</a>, ou <a href="indexCT.html">cadastre-se</a>
-                </h2>
-            </div>
-        </aside>
+        <aside></aside>
     </div>
 
     <footer>
