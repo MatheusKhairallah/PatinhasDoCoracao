@@ -16,6 +16,10 @@ body {
     font-size: 25px;
     text-align: center;
   }
+
+  aside {
+    text-align: center;
+  }
   
   .hg-conteudo {
     flex: 1;
@@ -63,7 +67,7 @@ body {
   form {
     display: flex;
     flex-flow: column;
-    margin: 60px 40px;
+    margin: 50px 40px;
   }
     
   input, button, a {
@@ -99,4 +103,19 @@ body {
       font-size: 20px;
       font-weight: bold;
       color: #0D0D0D;
+    }
+
+    #logar {
+      border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
+      background-color: #F23838;
+      font-size: 20px;
+      color: #0D0D0D;
+      font-weight: bold;
+      transition: all 1s ease 0s;
+      font-family: 'Pangolin', cursive;
+    }
+    
+    #logar:hover {
+      color: whitesmoke;
+      transition-duration: 0.3s;
     }
