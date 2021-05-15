@@ -5,6 +5,8 @@ body {
     display: flex;
     flex-flow: column;
     font-family: 'Pangolin', cursive;
+    background-image: url(/Imagens/Fundo.PNG);
+    background-size: cover;
   }
 
   header {
@@ -76,8 +78,8 @@ body {
   
   /*Cadastrar*/
   #cadastrar {
-      border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
-      background-color: #F23838;
+      border-width: 1px; border-style: solid; border-color: #A62D59d3; border-radius: 10px; padding: 10px 50px;
+      background-color: #a62d59d3;
       font-size: 20px;
       color: #0D0D0D;
       font-weight: bold;
@@ -86,7 +88,7 @@ body {
     }
     
     #cadastrar:hover {
-      color: whitesmoke;
+      color: #FFFFF0;
       transition-duration: 0.3s;
     }
     
@@ -105,9 +107,10 @@ body {
       color: #0D0D0D;
     }
 
+    /*Logar*/
     #logar {
-      border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
-      background-color: #F23838;
+      border-style: solid; border-color: #A62D59d3; border-radius: 10px; padding: 10px 50px;
+      background-color: #a62d59de;
       font-size: 20px;
       color: #0D0D0D;
       font-weight: bold;
@@ -116,6 +119,6 @@ body {
     }
     
     #logar:hover {
-      color: whitesmoke;
+      color: #FFFFF0;
       transition-duration: 0.3s;
     }

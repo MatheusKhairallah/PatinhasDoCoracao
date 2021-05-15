@@ -1,0 +1,126 @@
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  font-family: 'Pangolin', cursive;
+  background-image: url(/Imagens/Fundo.PNG);
+  background-size: cover;
+}
+
+footer {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+  
+  .hg-conteudo > nav {
+    order: -1;
+    text-align: center;
+  }
+  
+  .hg-conteudo > main {
+    flex: 1;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .hg-conteudo {
+        flex-flow: row;
+    }
+  
+    .hg-conteudo > aside,
+    .hg-conteudo > nav {
+        flex: 0 0 200px;
+    }
+  }
+  
+  /*Logo do site*/
+  #logotipo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /*Titulo do site*/
+  #patinhas {
+    margin-left: 110px;
+    margin-top: -70px;
+  }
+  
+  /*Menu*/
+  .menu {
+    width: 200px;
+    font-size: 28px;
+    text-align: center;
+    background-color: #F23838;
+    color: #0D0D0D;
+    margin-top: 30px;
+    margin-left: 22px;
+    border-style: none; border-radius: 20px;
+    transition: all 1s ease 0s;
+    font-family: 'Pangolin', cursive;
+}
+
+.menu:hover {
+    color: whitesmoke;
+    transition-duration: 0.3s;
+}
+  
+  button {
+    outline: none;
+  }
+
+/*Fomulário*/
+form {
+    display: flex;
+    flex-flow: column;
+    margin: 60px 40px;
+  }
+  
+  option, select, button, a {
+    outline: none;
+  }
+  
+  .linha {
+    display: flex;
+    flex-flow: row;
+  }
+
+/*Filtrar*/
+#filtrar {
+    text-align: center;
+    border-width: 1px; border-style: solid; border-color: #A62D59D3; border-radius: 10px; padding: 10px 50px;
+    background-color: #A62D59D3;
+    font-size: 20px;
+    color: #0D0D0D;
+    font-weight: bold;
+    transition: all 1s ease 0s;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  #filtrar:hover {
+    color: whitesmoke;
+    transition-duration: 0.3s;
+  }
+  
+  /*Campo de preenchimento*/
+  select, option {
+    border-width: 2px; border-style: solid; border-color: #0D0D0D; border-radius: 10px; margin: 5px 10px;
+    font-size: 30px;
+    padding: 8px;
+  }
+  
+  /*Raça e Porte*/
+  .linha_2 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0D0D0D;
+  }

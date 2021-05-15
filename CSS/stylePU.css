@@ -1,16 +1,19 @@
+/*Holy grail*/
 body {
-  margin: 0 auto;
-  max-width: 1440px;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column;
-  font-family: 'Pangolin', cursive;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Pangolin', cursive;
+    background-image: url(/Imagens/Fundo.PNG);
+    background-size: cover;
 }
 
 footer {
     font-weight: bold;
     font-size: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 .hg-conteudo {
@@ -18,42 +21,42 @@ footer {
     display: flex;
     flex-flow: column;
 }
-  
-  .hg-conteudo > nav {
+
+.hg-conteudo > nav {
     order: -1;
     text-align: center;
-  }
-  
-  .hg-conteudo > main {
+}
+
+.hg-conteudo > main {
     flex: 1;
     text-align: center;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .hg-conteudo {
         flex-flow: row;
     }
-  
+
     .hg-conteudo > aside,
     .hg-conteudo > nav {
         flex: 0 0 200px;
     }
-  }
-  
-  /*Logo do site*/
-  #logotipo {
+}
+
+/*Logo do site*/
+#logotipo {
     width: 100px;
     height: 100px;
-  }
-  
-  /*Titulo do site*/
-  #patinhas {
+}
+
+/*Titulo do site*/
+#patinhas {
     margin-left: 110px;
     margin-top: -70px;
-  }
-  
-  /*Menu*/
-  .menu {
+}
+
+/*Menu*/
+.menu {
     width: 200px;
     font-size: 28px;
     text-align: center;
@@ -70,55 +73,53 @@ footer {
     color: whitesmoke;
     transition-duration: 0.3s;
 }
-  
-  button {
-    outline: none;
-  }
 
-/*Fomulário*/
-form {
+button {
+    outline: none;
+}
+
+/*Perfil do usuário*/
+#imageUser {
+    margin: 25px;
+}
+
+#imagemPerfilUser {
+    display: flex;
+    align-items: initial;
+    width: 150px;
+    border-radius: 7px;
+}
+
+#dadosDoUsuario {
     display: flex;
     flex-flow: column;
-    margin: 60px 40px;
-  }
-  
-  option, select, button, a {
-    outline: none;
-  }
-  
-  .linha {
+    text-align: left;
+}
+
+label {
+    margin-right: 5px;
+}
+
+.dados {
     display: flex;
     flex-flow: row;
-  }
+    margin: 15px;
+}
 
-/*Filtrar*/
-#filtrar {
-    text-align: center;
-    border-width: 1px; border-style: solid; border-color: #F23838; border-radius: 10px; padding: 10px 50px;
-    background-color: #F23838;
+.menuButton {
+    width: 200px;
     font-size: 20px;
+    text-align: center;
+    background-color: #F23838;
     color: #0D0D0D;
-    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 22px;
+    border-style: none; border-radius: 20px;
     transition: all 1s ease 0s;
     font-family: 'Pangolin', cursive;
-  }
-  
-  #filtrar:hover {
+}
+
+.menuButton:hover {
     color: whitesmoke;
     transition-duration: 0.3s;
-  }
-  
-  /*Campo de preenchimento*/
-  select, option {
-    border-width: 2px; border-style: solid; border-color: #0D0D0D; border-radius: 10px; margin: 5px 10px;
-    font-size: 30px;
-    padding: 8px;
-  }
-  
-  /*Raça e Porte*/
-  .linha_2 {
-    margin: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #0D0D0D;
-  }
+}

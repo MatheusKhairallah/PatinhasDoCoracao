@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil do Usuário</title>
+    <title>Filtragem</title>
     <link rel="shortcut icon" href="imageFaviconPage.png" type="image/x-icon" />
-    <link rel="stylesheet" href="stylePU.css">
+    <link rel="stylesheet" href="/CSS/styleFT.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
@@ -14,47 +14,43 @@
     <header>
         <!--Logotipo do site-->
         <a href="indexPI.html">
-            <img id="logotipo" src="20201021_220949.png" alt="Logotipo Patinhas">
+            <img id="logotipo" src="/Imagens/20201021_220949.png" alt="Logotipo Patinhas">
         </a>
-
+  
         <!--Nome do site-->
         <h1 id="patinhas">Patinhas do Coração</h1>
     </header>
-
+  
     <div class="hg-conteudo">
         <main>
-            <div id="imageUser">
-                <img id="imagemPerfilUser" src="imagePerfilUser.jpg" alt="Imagem de perfil do usuário" />
-            </div>
-                <div id="dadosDoUsuario">
-                    <div class="dados">
-                        <label for="nomeUser">Nome:</label>
-                        <div id="nomeUser">Usuário 1</div>
-                    </div>
-                    <div class="dados">
-                        <label for="idadeUser">Idade:</label>
-                        <div id="idadeUser">25</div>
-                    </div>
-                    <div class="dados">
-                        <label for="localUser">Localização:</label>
-                        <div id="localUser">Mongaguá</div>
-                    </div>
-                    <div class="dados">
-                        <label for="emailUser">E-mail:</label>
-                        <div id="emailUser">usuario1@patinhasdocoracao.com.br</div>
-                    </div>
-                    <div class="dados">
-                        <label for="telefoneUser">Telefone:</label>
-                        <div id="telefoneUser">(13) 99999-99999</div>
-                    </div>
+            <form>
+                <div class="linha_2">
+                    <select name="raca" id="raca">
+                        <option selected>Raça</option>
+                        <option value="1">Pastor-alemão</option>
+                        <option value="2">Buldogue</option>
+                        <option value="3">Poodle</option>
+                        <option value="4">Labrador retriever</option>
+                        <option value="5">Golden retriever</option>
+                    </select>
                 </div>
-                <div id="modifyPerfil">
-                    <a href="#">
-                        <button class="menuButton" type="submit">Modificar Perfil</button>
-                    </a>
+                <div class="linha_2">
+                    <select name="porte" id="porte">
+                        <option selected>Porte</option>
+                        <option value="1">Gigante</option>
+                        <option value="2">Grande</option>
+                        <option value="3">Médio</option>
+                        <option value="4">Pequeno</option>
+                        <option value="5">Mini</option>
+                    </select>
                 </div>
+                <div id="linha_3">
+                    <button id="filtrar" type="submit">Filtrar</button>
+                </div>
+                <br />
+            </form>
         </main>
-
+  
         <nav>
             <!--Menu-->
             <div>
@@ -75,10 +71,10 @@
                 </a>
             </div>
         </nav>
-
+  
         <aside></aside>
     </div>
-
+  
     <footer>
         <!--Nome da empresa-->
         <div id="empresa">
