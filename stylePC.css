@@ -6,14 +6,14 @@ body {
     display: flex;
     flex-flow: column;
     font-family: 'Pangolin', cursive;
-    background-image: url(/Imagens/Fundo.PNG);
+    background-image: url(Fundo.PNG);
     background-size: cover;
 }
 
 footer {
     font-weight: bold;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
 }
 
 .hg-conteudo {
@@ -29,7 +29,7 @@ footer {
 
 .hg-conteudo > main {
     flex: 1;
-    text-align: center;
+    text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -78,48 +78,27 @@ button {
     outline: none;
 }
 
-/*Perfil do usuário*/
-#imageUser {
-    margin: 25px;
+/*Lista dos cães*/
+#mais {
+    margin-top: 160px;
+    margin-left: 50px;
+    font-size: 50px;
+    background-color: #A62D59D3;
+    border-width: 8px; border-style: solid; border-color: #A62D59D3; border-radius: 50%;
 }
 
-#imagemPerfilUser {
-    display: flex;
-    align-items: initial;
-    width: 150px;
-    border-radius: 7px;
+li {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
-#dadosDoUsuario {
-    display: flex;
-    flex-flow: column;
-    text-align: left;
+a:link {
+    color: black;
+    text-decoration: none;
 }
 
-label {
-    margin-right: 5px;
-}
-
-.dados {
-    display: flex;
-    flex-flow: row;
-    margin: 15px;
-}
-
-.menuButton {
-    width: 200px;
-    font-size: 20px;
-    text-align: center;
-    background-color: #F23838;
-    color: #0D0D0D;
-    margin-top: 30px;
-    margin-left: 22px;
-    border-style: none; border-radius: 20px;
-    transition: all 1s ease 0s;
-    font-family: 'Pangolin', cursive;
-}
-
-.menuButton:hover {
-    color: whitesmoke;
-    transition-duration: 0.3s;
+a:visited {
+    color: black;
+    text-decoration: none;
 }

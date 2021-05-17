@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-flow: column;
   font-family: 'Pangolin', cursive;
-  background-image: url(/Imagens/Fundo.PNG);
+  background-image: url(Fundo.PNG);
   background-size: cover;
 }
 

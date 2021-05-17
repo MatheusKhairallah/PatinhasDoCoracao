@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-flow: column;
     font-family: 'Pangolin', cursive;
-    background-image: url(/Imagens/Fundo.PNG);
+    background-image: url(Fundo.PNG);
     background-size: cover;
 }
 
@@ -78,7 +78,7 @@ button {
     outline: none;
 }
 
-/*Perfil do cão*/
+/*Anúncio do cão*/
 main {
     display: flex;
     flex-flow: column;
@@ -127,7 +127,7 @@ label {
     margin: 15px;
 }
 
-.modifyButton {
+.menuButton {
     width: 200px;
     font-size: 20px;
     text-align: center;
@@ -140,7 +140,7 @@ label {
     font-family: 'Pangolin', cursive;
 }
 
-.modifyButton:hover {
+.menuButton:hover {
     color: whitesmoke;
     transition-duration: 0.3s;
 }
