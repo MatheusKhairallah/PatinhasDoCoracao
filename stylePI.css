@@ -16,6 +16,10 @@ footer {
     text-align: center;
 }
 
+aside {
+    text-align: center;
+}
+
 .hg-conteudo {
     flex: 1;
     display: flex;
@@ -105,4 +109,15 @@ button {
     width: 180px;
     height: 180px;
     border-radius: 15%;
+}
+
+/*Parcerias*/
+#AgroSítio {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 30px;
 }
