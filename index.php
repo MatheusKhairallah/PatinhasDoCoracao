@@ -19,22 +19,25 @@
     <div class="hg-conteudo">
         <main>
             <!--Fomulário de cadastro-->
-            <form>
+            <form action="#" method="POST">
                 <div class="Campo_Preenchimento">
-                    <input type="text" name="nome" placeholder="insira seu nome" id="nome">
+                    <input type="text" name="nome" placeholder="insira seu nome" id="nome" required>
                 </div>
                 <div class="Campo_Preenchimento">
-                    <input type="text" name="email" placeholder="insira seu E-mail" id="email">
+                    <input type="number" name="idade" placeholder="insira sua idade" id="idade" required>
                 </div>
                 <div class="Campo_Preenchimento">
-                    <input type="password" name="password" placeholder="insira sua senha" id="senha">
+                    <input type="text" name="email" placeholder="insira seu E-mail" id="email" required>
+                </div>
+                <div class="Campo_Preenchimento">
+                    <input type="password" name="password" placeholder="insira sua senha" id="senha" required>
                 </div>
                 <div class="Campo_Preenchimento2">
                     <button id="cadastrar" type="submit">Cadastrar</button>
                 </div>
                 <br/>
                 <div>
-                    <a href="indexLG.html">
+                    <a href="indexLG.php">
                         <button id="logar" type="button">Já possui uma conta? Faça login!</button>
                     </a>
                 </div>
@@ -65,5 +68,44 @@
             ©Companhia Thoth - 2021
         </div>
     </footer>
+
+    <!--Back-end-->
+    <?php
+        if (!empty($_POST))
+        {
+            if($_POST['idade']>=18)
+            {
+
+            
+            include_once('conexao.php');
+
+            $email= $_POST['email'];
+            $nome= $_POST['nome'];
+            $idade= $_POST['idade'];
+            $senha= $_POST['password'];
+
+            $stmt= $con->prepare("INSERT INTO tb_login(email, nm_perfil, nr_idade, nr_senha) VALUES(?, ?, ?, ?)");
+
+            $stmt->bindParam(1,$email);
+            $stmt->bindParam(2,$nome);
+            $stmt->bindParam(3, $idade);
+            $stmt->bindParam(4,$senha);
+
+            $stmt->execute();
+
+            echo "<script>
+                    alert('Cadastrado com Sucesso!');
+		            window.location.href = 'indexPI.html';
+                  </script>";
+                  
+            }
+            else
+            {
+                echo "<script>
+                    alert('Cadastro não permitido para menores de idade!');
+                  </script>";
+            }
+        }
+    ?>
 </body>
 </html>

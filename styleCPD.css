@@ -1,0 +1,138 @@
+/*Holy grail*/
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Pangolin', cursive;
+    background-image: url(https://cdn.pixabay.com/photo/2015/05/06/03/54/red-754861_960_720.png);
+    background-size: cover;
+}
+
+footer {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+aside {
+    text-align: center;
+}
+
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.hg-conteudo > nav {
+    order: -1;
+    text-align: center;
+}
+
+.hg-conteudo > main {
+    flex: 1;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hg-conteudo {
+        flex-flow: row;
+    }
+
+    .hg-conteudo > aside,
+    .hg-conteudo > nav {
+        flex: 0 0 200px;
+    }
+}
+
+/*Logo do site*/
+#logotipo {
+    width: 100px;
+    height: 100px;
+}
+
+/*Titulo do site*/
+#patinhas {
+    margin-left: 110px;
+    margin-top: -70px;
+}
+
+/*Menu*/
+.menu {
+    width: 200px;
+    font-size: 28px;
+    text-align: center;
+    background-color: #F23838;
+    color: #0D0D0D;
+    margin-top: 30px;
+    margin-left: 22px;
+    border-style: none; border-radius: 20px;
+    transition: all 1s ease 0s;
+    font-family: 'Pangolin', cursive;
+}
+
+.menu:hover {
+    color: whitesmoke;
+    transition-duration: 0.3s;
+}
+
+button {
+    outline: none;
+}
+/*Fomulário*/
+form {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    margin: 50px 40px;
+  }
+    
+  input, button, a {
+    outline: none;
+  }
+  
+
+  /*Criar perfil do cão*/
+  #criar_perfil {
+      border-width: 1px; border-style: solid; border-color: #A62D59d3; border-radius: 10px; padding: 10px 50px;
+      background-color: #a62d59d3;
+      font-size: 16px;
+      color: #0D0D0D;
+      font-weight: bold;
+      transition: all 1s ease 0s;
+      font-family: 'Pangolin', cursive;
+    }
+    
+    #criar_perfil:hover {
+      color: #FFFFF0;
+      transition-duration: 0.3s;
+    }
+
+    .Campo_Preenchimento2{
+      flex-flow: column;
+      text-align: center;
+    }
+    
+    /*Campo de preenchimento*/
+    #nome, #raca, #idade, #vacina, #temperamento, #email {
+      border-width: 2px; border-style: solid; border-color: #0D0D0D; border-radius: 10px; margin: 5px 10px;
+      font-size: 17px;
+      padding: 8px;
+    }
+    
+    /*Nome, CPF e Senha*/
+    .Campo_Preenchimento {
+      margin: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #0D0D0D;
+    }
+
+    /*Dados complementares*/
+    .dadosComplementares{
+        font-size: 17px;
+        color: #0D0D0D;
+        font-weight: bold;
+    }

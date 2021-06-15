@@ -19,12 +19,12 @@
   <div class="hg-conteudo">
       <main>
         <!--Formulário-->
-        <form>
+        <form action="#" method="POST">
           <div class="Campo_Preenchimento">
-            <input type="text" name="nome" placeholder="insira seu E-mail" id="nome" />
+            <input type="text" name="email" placeholder="insira seu E-mail" id="nome" required>
           </div>
           <div class="Campo_Preenchimento">
-            <input type="password" name="senha" placeholder="insira sua senha" id="senha"/>
+            <input type="password" name="senha" placeholder="insira sua senha" id="senha" required>
           </div>
           <div id="Campo_Preenchimento2">
             <button id="entrar" type="submit">Entrar</button>
@@ -48,5 +48,42 @@
         ©Companhia Thoth - 2021
       </div>
   </footer>
+
+  <?php
+   if (!empty($_POST))
+   {
+    
+    $usuario = $_POST['email'];
+    $senha = $_POST['senha'];
+
+ 
+
+    include_once('conexao.php');
+    
+    $rs = $con->prepare("SELECT * FROM tb_login where email='$usuario'and nr_senha='$senha'");
+            
+    $rs -> execute();
+    
+    if($rs->rowCount() == 1)
+    {    
+      echo "<script>
+               alert('Logado com Sucesso!');
+               window.location.href = 'indexPI.html';
+            </script>";
+    }
+    else
+    {
+        echo"<script>
+        
+                alert('Nome de usuário ou senha incorreto');
+                window.location.href = 'indexLG.php';
+            
+            </script>";
+        
+    }
+
+  }
+
+?>
 </body>
 </html>
