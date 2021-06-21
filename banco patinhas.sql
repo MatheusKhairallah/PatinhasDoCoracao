@@ -9,7 +9,7 @@ st_vermifugado varchar(15),
 st_castrado varchar(15),
 nm_vacinas varchar(30),
 ds_temperamento varchar(30),
-nm_raca varchar(30) not null,
+nm_raca varchar(80) not null,
 ds_porte varchar(80) not null,
 email varchar(80) not null,
 foreign key (email) references tb_login(email));

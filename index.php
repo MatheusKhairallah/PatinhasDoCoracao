@@ -41,6 +41,11 @@
                         <button id="logar" type="button">Já possui uma conta? Faça login!</button>
                     </a>
                 </div>
+                <div id="Botoes">
+                    <p class="facebook"><a href="#"><i class="fab fa-facebook-f"></i> Sign in with <b>Facebook</b></a></p>
+                    <!-- <br> -->
+                    <p class="google"><a href="#"><i class="fab fa-google"></i> Sign in with <b>Google</b></a></p>
+                </div>
             </form>
         </main>
 
@@ -95,7 +100,7 @@
 
             echo "<script>
                     alert('Cadastrado com Sucesso!');
-		            window.location.href = 'indexPI.html';
+		            window.location.href = 'indexLG.php';
                   </script>";
                   
             }

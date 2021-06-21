@@ -13,7 +13,7 @@
     <!--Holy Grail Layout-->
     <header>
         <!--Logotipo do site-->
-        <a href="indexPI.html">
+        <a href="indexPI.php">
             <img id="logotipo" src="20201021_220949.png" alt="Logotipo Patinhas">
         </a>
 
@@ -26,26 +26,55 @@
             <div id="imageUser">
                 <img id="imagemPerfilUser" src="imagePerfilUser.jpg" alt="Imagem de perfil do usuário" />
             </div>
+
+        <?php
+        session_start();
+        $usuario= $_SESSION['usuario'];
+            include_once('conexao.php');
+            try
+            {
+                  
+                $select = $con->prepare("SELECT * FROM tb_login where email= '$usuario'");
+                $select->execute();
+           
+                    while($row = $select->fetch())
+                    {
+        ?>
+
                 <div id="dadosDoUsuario">
                     <div class="dados">
                         <label for="nomeUser">Nome:</label>
-                        <div id="nomeUser">Usuário 1</div>
+                        <div id="nomeUser"><?php echo $row['nm_perfil']; ?></div>
                     </div>
                     <div class="dados">
                         <label for="idadeUser">Idade:</label>
-                        <div id="idadeUser">25</div>
+                        <div id="idadeUser"><?php echo $row['nr_idade']; ?></div>
                     </div>
                     <div class="dados">
                         <label for="emailUser">E-mail:</label>
-                        <div id="emailUser">usuario1@patinhasdocoracao.com.br</div>
+                        <div id="emailUser"><?php echo $row['email']; ?></div>
                     </div>
                 </div>
+
+                <button id="excluir"
+                onclick="javascript: location.href='botaoExcluir2.php?codigo=<?php echo $row['email'];?>'">
+                Excluir
+                </button>
+
+                <?php
+                                    }
+                                }
+                                catch(PDOException $e)
+                                {
+                                    echo 'ERROR: ' . $e->getMessage();
+                                }
+                ?>
         </main>
 
         <nav>
             <!--Menu-->
             <div>
-                <a href="indexPU.html">
+                <a href="indexPU.php">
                     <button class="menu" type="submit">Meu Perfil</button>
                 </a>  
             <div>

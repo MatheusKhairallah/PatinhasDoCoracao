@@ -13,7 +13,7 @@
     <!--Holy Grail Layout-->
     <header>
         <!--Logotipo do site-->
-        <a href="indexPI.html">
+        <a href="indexPI.php">
             <img id="logotipo" src="20201021_220949.png" alt="Logotipo Patinhas">
         </a>
 
@@ -40,7 +40,7 @@
         <nav>
             <!--Menu-->
             <div>
-                <a href="indexPU.html">
+                <a href="indexPU.php">
                     <button class="menu" type="button">Meu Perfil</button>
                 </a>  
             <div>

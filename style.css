@@ -133,3 +133,48 @@ body {
     h3 {
       font-size: 30px;
     }
+
+    /*G e F*/
+    #Botoes{
+      display: flex;
+      flex-flow: column;
+      background-size: 10px;
+      font-family: 'Roboto', sans-serif;
+    }
+   
+    .facebook{
+      border-width: 2px; border-style: solid; border-color: #2b62aa; border-radius: 30px; margin: 5px 10px;
+      padding: 13px;
+      background-color: #2b62aa;
+      font-size: 20px;
+      font-weight: bold;
+      transition: all 1s ease 0s;
+      /*background-color: #2b62aa;
+      border-width: 2px; border-style: solid; border-color: #2b62aa; border-radius: 30px; margin: 5px 10px;
+      padding: 13px;
+      text-align: center;*/
+    }
+   
+    .google{
+      border-width: 2px; border-style: solid; border-color: #D93E30; border-radius: 30px; margin: 5px 10px;
+      padding: 13px;
+      background-color: #D93E30;
+      font-size: 20px;
+      font-weight: bold;
+      transition: all 1s ease 0s;
+      /*background-color: #D93E30;
+      border-width: 2px; border-style: solid; border-color: #D93E30; border-radius: 30px; margin: 5px 10px;
+      padding: 13px;
+      text-align: center;*/
+    }
+   
+  a{
+      color: #ffffff;
+      text-decoration: none;
+  }
+   
+  i{
+      margin: 0 0.5rem;
+      width: 15px;
+      text-align: center;
+  }

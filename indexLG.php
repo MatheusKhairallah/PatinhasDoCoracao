@@ -33,7 +33,11 @@
           <div id="Campo_Preenchimento3">
             <button id="esqueci_senha" type="button">Esqueci a minha senha</button>
           </div>
-          <br />
+          <div id="Botoes">
+                <p class="facebook"><a href="#"><i class="fab fa-facebook-f"></i> Sign in with <b>Facebook</b></a></p>
+                <!-- <br> -->
+                <p class="google"><a href="#"><i class="fab fa-google"></i> Sign in with <b>Google</b></a></p>
+            </div>
         </form>
       </main>
 
@@ -50,6 +54,7 @@
   </footer>
 
   <?php
+  session_start();
    if (!empty($_POST))
    {
     
@@ -65,10 +70,11 @@
     $rs -> execute();
     
     if($rs->rowCount() == 1)
-    {    
+    { 
+      $_SESSION['usuario'] = $usuario;   
       echo "<script>
                alert('Logado com Sucesso!');
-               window.location.href = 'indexPI.html';
+               window.location.href = 'indexPI.php';
             </script>";
     }
     else

@@ -117,8 +117,8 @@ form {
     padding: 8px;
   }
   
-  /*Raça e Porte*/
-  .linha_2 {
+  /*Raça*/
+  #linha_2 {
     margin: 10px;
     font-size: 20px;
     font-weight: bold;
