@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Lista dos cães</title>
     <link rel="shortcut icon" href="imageFaviconPage.png" type="image/x-icon" />
-    <link rel="stylesheet" href="stylePI.css">
+    <link rel="stylesheet" href="stylePC.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
@@ -23,55 +23,50 @@
 
     <div class="hg-conteudo">
         <main>
-            <!--Anúncio dos cães-->
-            <div id="caes">
-            <?php
+        <?php
+        session_start();
+        $usuario= $_SESSION['usuario'];
             include_once('conexao.php');
                   
-                $select = $con->prepare("SELECT * FROM tb_dog");
+                $select = $con->prepare("SELECT * FROM tb_dog where email= '$usuario'");
                 $select->execute();
            
                     while($row = $select->fetch())
                     {
-            ?>
-
-                <a href="indexAC.html">
-                    <img id="cão1" src="<?php echo $row['ds_img']; ?>" alt="Foto de cão">
+        ?>
+           <ul>
+               <a href="indexPD.php">
+                   <li><?php echo $row['nm_dog']; ?></li>
                 </a>
-            <?php
+           </ul>
+        <?php
                     }
-            ?>
-            </div>
+        ?>
+           <a href="indexCPD.php"><i id="mais" class="fas fa-plus"></i></a>
         </main>
 
         <nav>
             <!--Menu-->
             <div>
                 <a href="indexPU.php">
-                    <button class="menu" type="button">Meu Perfil</button>
+                    <button class="menu" type="submit">Meu Perfil</button>
                 </a>  
             <div>
         
             <div>
                 <a href="indexPC.php">
-                    <button class="menu" type="button">Perfil do Cão</button>
+                    <button class="menu" type="submit">Perfil do Cão</button>
                 </a>
             </div>
             
             <div>
                 <a href="indexFT.php">
-                    <button class="menu" type="button">Filtros</button>
+                    <button class="menu" type="submit">Filtros</button>
                 </a>
             </div>
         </nav>
 
-        <aside>
-            <h3>Parcerias</h3>
-
-            <a href="https://agrositio-pet-store.negocio.site/?utm_source=gmb&utm_medium=referral" target="_blank">
-                <img id="AgroSítio" src="AgroSítio.jpg" alt="Logo do AgroSítio">
-            </a>
-        </aside>
+        <aside></aside>
     </div>
 
     <footer>

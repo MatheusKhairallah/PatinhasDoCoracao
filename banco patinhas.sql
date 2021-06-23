@@ -11,9 +11,15 @@ nm_vacinas varchar(30),
 ds_temperamento varchar(30),
 nm_raca varchar(80) not null,
 ds_porte varchar(80) not null,
+ds_img varchar(50),
 email varchar(80) not null,
 foreign key (email) references tb_login(email));
 select * from tb_dog;
+update tb_dog set ds_img= 'Imagens/cao1.jpg' where cd_dog= 1;
+update tb_dog set ds_img= 'Imagens/cao2.jpg' where cd_dog= 3;
+update tb_dog set ds_img= 'Imagens/cao3.jpg' where cd_dog= 4;
+update tb_dog set ds_img= 'Imagens/cao4.jpg' where cd_dog= 5;
+
 
 create table tb_login(
 email varchar(80) primary key not null,

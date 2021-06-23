@@ -149,13 +149,13 @@
             <div>
         
             <div>
-                <a href="indexPC.html">
+                <a href="indexPC.php">
                     <button class="menu" type="button">Perfil do Cão</button>
                 </a>
             </div>
             
             <div>
-                <a href="indexFT.html">
+                <a href="indexFT.php">
                     <button class="menu" type="button">Filtros</button>
                 </a>
             </div>
@@ -205,7 +205,7 @@
             $stmt->execute();
 
             echo "<script>
-		            window.location.href = 'indexPC.html';
+		            window.location.href = 'indexPC.php';
                   </script>";
                   
         }

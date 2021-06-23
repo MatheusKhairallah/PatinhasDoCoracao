@@ -23,7 +23,7 @@
   
     <div class="hg-conteudo">
         <main>
-            <form>
+            <form action="indexPI_F.php" method="POST">
                 <div id="linha_2">
                     <select name="raca" id="raca">
                         <option selected>Raça</option>
@@ -99,13 +99,13 @@
             <div>
         
             <div>
-                <a href="indexPC.html">
+                <a href="indexPC.php">
                     <button class="menu" type="submit">Perfil do Cão</button>
                 </a>
             </div>
             
             <div>
-                <a href="indexFT.html">
+                <a href="indexFT.php">
                     <button class="menu" type="submit">Filtros</button>
                 </a>
             </div>

@@ -16,7 +16,7 @@
         $delete->execute();
         echo "<script>
                 alert('Cão excluido com Sucesso!');
-                window.location.href = 'indexPC.html';
+                window.location.href = 'indexPC.php';
               </script>";
     } 
     catch(PDOException $e) 
