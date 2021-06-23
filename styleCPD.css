@@ -116,7 +116,7 @@ form {
     }
     
     /*Campo de preenchimento*/
-    #nome, #raca, #idade, #vacina, #temperamento, #email {
+    #nome, #raca, #idade, #vacina, #temperamento, #email, #arquivo {
       border-width: 2px; border-style: solid; border-color: #0D0D0D; border-radius: 10px; margin: 5px 10px;
       font-size: 17px;
       padding: 8px;

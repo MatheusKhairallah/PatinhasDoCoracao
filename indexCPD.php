@@ -24,7 +24,7 @@
     <div class="hg-conteudo">
         <main>
              <!--Fomulário de cadastro-->
-             <form action="#" method="POST">
+             <form action="#" method="POST" enctype="multipart/form-data">
                 <div class="Campo_Preenchimento">
                     <input type="text" name="nome" placeholder="insira o nome" id="nome" required>
                 </div>
@@ -104,6 +104,11 @@
                     </select>
                 </div>
 
+                <div class="Campo_Preenchimento">
+                    <input type="file" name="arquivo" placeholder="Foto do cão" id="arquivo" required>
+
+                </div>
+
                 <div class="dadosComplementares">
                     <legend>Vermifugado</legend>
                     <input type="radio" name="vermifugado" id="vermifugado_1" value="Sim" required>
@@ -135,7 +140,7 @@
                 </div>
                 <br/>
                 <div class="Campo_Preenchimento2">
-                    <button id="criar_perfil" type="submit">Criar Perfil do Cão</button>
+                    <button id="criar_perfil" type="submit" name="criar_perfil">Criar Perfil do Cão</button>
                 </div>
             </form>
         </main>
@@ -175,7 +180,27 @@
     <?php
         if (!empty($_POST))
         {
-           
+            /*Upload de imagens*/
+            if(isset($_POST['criar_perfil'])):
+                $formatosPermitidos= array("png", "jpg");
+                $extensao= pathinfo($_FILES['arquivo']['name'], PATHINFO_EXTENSION);
+                
+                if(in_array($extensao, $formatosPermitidos)):
+                    $pasta= "Imagens/";
+                    $temporario= $_FILES['arquivo']['tmp_name'];
+                    $novoNome= uniqid().".$extensao";
+
+                    if(move_uploaded_file($temporario, $pasta.$novoNome)):
+                        $mensagem= "Upload feito com sucesso!";
+                    else:
+                        $mensagem= "Erro, não foi possivel fazer o upload";
+                    endif;
+                else:
+                    $mensagem= "Formato inválido";
+                endif;
+    
+            endif;
+
             include_once('conexao.php');
 
             $nome= $_POST['nome'];
@@ -186,20 +211,22 @@
             $vermifugado= $_POST['vermifugado'];
             $castrado= $_POST['castrado'];
             $porte= $_POST['porte'];
+            $arquivo= $_POST['arquivo'];
             $email= $_POST['email'];
 
             $stmt= $con->prepare("INSERT INTO tb_dog(nm_dog, qt_idade, nm_vacinas, ds_temperamento, nm_raca, 
-            st_vermifugado, st_castrado, ds_porte, email) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            st_vermifugado, st_castrado, ds_porte, ds_img, email) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
             $stmt->bindParam(1,$nome);
-            $stmt->bindParam(2, $idade);
+            $stmt->bindParam(2,$idade);
             $stmt->bindParam(3,$vacina);
             $stmt->bindParam(4,$temperamento);
             $stmt->bindParam(5,$raca);
             $stmt->bindParam(6,$vermifugado);
             $stmt->bindParam(7,$castrado);
             $stmt->bindParam(8,$porte);
-            $stmt->bindParam(9,$email);
+            $stmt->bindParam(9,$arquivo);
+            $stmt->bindParam(10,$email);
 
 
             $stmt->execute();
