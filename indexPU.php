@@ -23,9 +23,7 @@
 
     <div class="hg-conteudo">
         <main>
-            <div id="imageUser">
-                <img id="imagemPerfilUser" src="imagePerfilUser.jpg" alt="Imagem de perfil do usuário" />
-            </div>
+            
 
         <?php
         session_start();
@@ -40,7 +38,9 @@
                     while($row = $select->fetch())
                     {
         ?>
-
+                <div id="imageUser">
+                    <img id="imagemPerfilUser" src="<?php echo $row ['ds_img']; ?>" alt="Imagem de perfil do usuário" />
+                </div>
                 <div id="dadosDoUsuario">
                     <div class="dados">
                         <label for="nomeUser">Nome:</label>

@@ -24,9 +24,7 @@
     <div class="hg-conteudo">
         <main>
             <div id="bloco1">
-                <div id="imagePet">
-                    <img id="imagemPetUser" src="pexels-charles-roth-2797318.jpg" alt="Imagem do PET anunciado" />
-                </div>
+                
 
         <?php
         session_start();
@@ -41,6 +39,9 @@
                     while($row = $select->fetch())
                     {
         ?>
+                    <div id="imagePet">
+                        <img id="imagemPetUser" src="<?php echo $row ['ds_img']; ?>" alt="Imagem do PET anunciado" />
+                    </div>
 
                     <div id="dadosDoPet">
                         <div class="dados">

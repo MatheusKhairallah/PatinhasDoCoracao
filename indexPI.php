@@ -34,7 +34,6 @@
                     while($row = $select->fetch())
                     {
             ?>
-
                 <a href="indexAC.html">
                     <img id="cão1" src="<?php echo $row['ds_img']; ?>" alt="Foto de cão">
                 </a>

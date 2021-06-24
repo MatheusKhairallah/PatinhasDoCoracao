@@ -106,7 +106,6 @@
 
                 <div class="Campo_Preenchimento">
                     <input type="file" name="arquivo" placeholder="Foto do cão" id="arquivo" required>
-
                 </div>
 
                 <div class="dadosComplementares">
@@ -166,7 +165,14 @@
             </div>
         </nav>
 
-        <aside></aside>
+        <aside>
+            <!--Menu-->
+            <h2>Atenção!</h2>
+            <p>
+                Olá usuário! Você só poderá cadastrar um cão por conta.
+                Fique a tento ao formulário abaixo.
+            </p>
+        </aside>
     </div>
 
     <footer>
@@ -182,7 +188,7 @@
         {
             /*Upload de imagens*/
             if(isset($_POST['criar_perfil'])):
-                $formatosPermitidos= array("png", "jpg");
+                $formatosPermitidos= array("png", "jpg", "jpeg");
                 $extensao= pathinfo($_FILES['arquivo']['name'], PATHINFO_EXTENSION);
                 
                 if(in_array($extensao, $formatosPermitidos)):
@@ -211,7 +217,7 @@
             $vermifugado= $_POST['vermifugado'];
             $castrado= $_POST['castrado'];
             $porte= $_POST['porte'];
-            $arquivo= $_POST['arquivo'];
+            $arquivo= $pasta.$novoNome;
             $email= $_POST['email'];
 
             $stmt= $con->prepare("INSERT INTO tb_dog(nm_dog, qt_idade, nm_vacinas, ds_temperamento, nm_raca, 

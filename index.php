@@ -33,7 +33,7 @@
                     <input type="password" name="password" placeholder="insira sua senha" id="senha" required>
                 </div>
                 <div class="Campo_Preenchimento2">
-                    <button id="cadastrar" type="submit">Cadastrar</button>
+                    <button id="cadastrar" type="submit" name="cadastrar">Cadastrar</button>
                 </div>
                 <br/>
                 <div>
@@ -81,7 +81,6 @@
             if($_POST['idade']>=18)
             {
 
-            
             include_once('conexao.php');
 
             $email= $_POST['email'];
@@ -95,7 +94,6 @@
             $stmt->bindParam(2,$nome);
             $stmt->bindParam(3, $idade);
             $stmt->bindParam(4,$senha);
-
             $stmt->execute();
 
             echo "<script>

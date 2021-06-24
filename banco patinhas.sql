@@ -20,8 +20,10 @@ create table tb_login(
 email varchar(80) primary key not null,
 nm_perfil varchar(50) not null,
 nr_idade int(2) not null,
-nr_senha varchar(12) not null);
+nr_senha varchar(12) not null,
+ds_img varchar(80));
 select * from tb_login;
+alter table tb_login modify ds_img varchar(80);
 
 /*insert into tb_raca (nm_raca)values
 ('Pastor-alemão'), ('Buldogue'), ('Poodle'), ('Labrador retriever'), ('Golden retriever'), ('Husky siberiano'), 

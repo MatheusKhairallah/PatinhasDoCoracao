@@ -136,3 +136,12 @@ form {
         color: #0D0D0D;
         font-weight: bold;
     }
+
+    /*Menssagem*/
+    h2 {
+        font-size: 35px;
+      }
+    
+      p {
+        font-size: 20px;
+      }

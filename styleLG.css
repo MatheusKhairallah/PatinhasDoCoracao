@@ -116,42 +116,53 @@ footer {
     display: flex;
     flex-flow: column;
     background-size: 10px;
+    position: absolute;
+    left: 500px;
+}
+
+.facebook{
+    background-image: linear-gradient(0deg, #2b62aa 0%,#1b4274 100%);
+    border-width: 2px; border-style: solid; border-radius: 30px; margin: 5px 10px;
+    padding: 13px;
+    transition: 3s linear;
     font-family: 'Roboto', sans-serif;
-  }
- 
-  .facebook{
-    border-width: 2px; border-style: solid; border-color: #2b62aa; border-radius: 30px; margin: 5px 10px;
+}
+
+.facebook:hover {
+    background-image: linear-gradient(0deg, #2b62aa 0%,#1b4274 100%);
+    border-width: 2px; border-style: solid; border-radius: 30px; margin: 5px 10px;
     padding: 13px;
-    background-color: #2b62aa;
-    font-size: 20px;
-    font-weight: bold;
-    transition: all 1s ease 0s;
-    /*background-color: #2b62aa;
-    border-width: 2px; border-style: solid; border-color: #2b62aa; border-radius: 30px; margin: 5px 10px;
-    padding: 13px;
-    text-align: center;*/
-  }
- 
-  .google{
-    border-width: 2px; border-style: solid; border-color: #D93E30; border-radius: 30px; margin: 5px 10px;
-    padding: 13px;
+    width: 193px;
+    height: 23px;
+    text-align: center;
+    
+}
+
+.google{
+    background-image: linear-gradient(0deg, #D93E30 0%,#c92e20 100%);
     background-color: #D93E30;
-    font-size: 20px;
-    font-weight: bold;
-    transition: all 1s ease 0s;
-    /*background-color: #D93E30;
-    border-width: 2px; border-style: solid; border-color: #D93E30; border-radius: 30px; margin: 5px 10px;
+    border-width: 2px; border-style: solid; border-radius: 30px; margin: 5px 10px;
     padding: 13px;
-    text-align: center;*/
-  }
- 
+    transition: 3s linear;
+    font-family: 'Roboto', sans-serif;
+}
+
+.google:hover {
+    background-image: linear-gradient(0deg, #D93E30 0%,#c92e20 100%);
+    border-width: 2px; border-style: solid; border-radius: 30px; margin: 5px 10px;
+    padding: 13px;
+    width: 193px;
+    height: 23px;
+    text-align: center;
+}
+
 a{
     color: #ffffff;
     text-decoration: none;
 }
- 
+
 i{
-    margin: 0 0.5rem;
-    width: 15px;
-    text-align: center;
+    margin: 0 0.3rem;
+    margin-left: 5px;
+    width: 17px;
 }
