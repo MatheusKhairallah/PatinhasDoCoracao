@@ -24,7 +24,7 @@
     <div class="hg-conteudo">
         <main>
             
-
+        <form action="fotoPerfil.php" method="POST" enctype="multipart/form-data">
         <?php
         session_start();
         $usuario= $_SESSION['usuario'];
@@ -56,9 +56,16 @@
                     </div>
                 </div>
 
+                <div class="upload">
+                    <input type="file" name="arquivo" placeholder="Foto do cão" id="arquivo" required>
+                    <br/>
+                    <br/>
+                    <button id="criar_perfil" type="submit" name="criar_perfil">Enviar foto</button>
+                </div>
+                <br/>
                 <button id="excluir"
                 onclick="javascript: location.href='botaoExcluir2.php?codigo=<?php echo $row['email'];?>'">
-                Excluir
+                Excluir Perfil
                 </button>
 
                 <?php
@@ -69,6 +76,7 @@
                                     echo 'ERROR: ' . $e->getMessage();
                                 }
                 ?>
+        </form>
         </main>
 
         <nav>

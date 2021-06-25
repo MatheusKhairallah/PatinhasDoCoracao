@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anúncio do cão</title>
+    <title>Meu cão</title>
     <link rel="shortcut icon" href="imageFaviconPage.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styleAC.css">
+    <link rel="stylesheet" href="stylePD.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
@@ -24,21 +24,38 @@
     <div class="hg-conteudo">
         <main>
             <div id="bloco1">
-                <div id="imagePet">
-                    <img id="imagemPetUser" src="pexels-charles-roth-2797318.jpg" alt="Imagem do PET anunciado" />
-                </div>
+                
+
+        <?php
+        session_start();
+        $usuario= $_SESSION['usuario'];
+        $codigo= $_GET['codigo'];
+            include_once('conexao.php');
+            try
+            {
+                  
+                $select = $con->prepare("SELECT * FROM tb_dog WHERE cd_dog= $codigo");
+                $select->execute();
+           
+                    while($row = $select->fetch())
+                    {
+        ?>
+                    <div id="imagePet">
+                        <img id="imagemPetUser" src="<?php echo $row ['ds_img']; ?>" alt="Imagem do PET anunciado" />
+                    </div>
+
                     <div id="dadosDoPet">
                         <div class="dados">
                             <label for="nomeUser">Nome:</label>
-                            <div id="nomeUser">Totó</div>
+                            <div id="nomeUser"><?php echo $row['nm_dog']; ?></div>
                         </div>
                         <div class="dados">
                             <label for="racaPet">Raça:</label>
-                            <div id="racaPet">Dobermann</div>
+                            <div id="racaPet"><?php echo $row['nm_raca']; ?></div>
                         </div>
                         <div class="dados">
                             <label for="idadePet">Idade:</label>
-                            <div id="idadePet">3</div>
+                            <div id="idadePet"><?php echo $row['qt_idade']; ?></div>
                         </div>
                     </div>
             </div>
@@ -46,25 +63,38 @@
                 <h3>Dados complementares:</h3>
                     <div class="dados">
                         <label for="portePet">Porte:</label>
-                        <div id="portePet">Médio</div>
+                        <div id="portePet"><?php echo $row['ds_porte']; ?></div>
                     </div>
                     <div class="dados">
                         <label for="vermifugado">Vermifugado:</label>
-                        <div id="vermifugado">Sim</div>
+                        <div id="vermifugado"><?php echo $row['st_vermifugado']; ?></div>
                     </div>
                     <div class="dados">
                         <label for="Castrado">Castrado:</label>
-                        <div id="castrado">Não</div>
+                        <div id="castrado"><?php echo $row['st_castrado']; ?></div>
                     </div>
                     <div class="dados">
                         <label for="vacinas">Vacinas:</label>
-                        <div id="vacinas">V10 / Gripe Canina / Anti-rábica</div>
+                        <div id="vacinas"><?php echo $row['nm_vacinas']; ?></div>
                     </div>
                     <div class="dados">
                         <label for="temperamento">Temperamento:</label>
-                        <div id="temperamento">Dócil, Gosta de crianças</div>
+                        <div id="temperamento"><?php echo $row['ds_temperamento']; ?></div>
+                    </div>
+                    <div class="dados">
+                        <label for="email">E-mail do dono:</label>
+                        <div id="email"><?php echo $row['email']; ?></div>
                     </div>
                 </div>
+
+                <?php
+                                    }
+                                }
+                                catch(PDOException $e)
+                                {
+                                    echo 'ERROR: ' . $e->getMessage();
+                                }
+                ?>
         </main>
 
         <nav>
@@ -97,5 +127,9 @@
             ©Companhia Thoth - 2021
         </div>
     </footer>
+
+    <!--Back-and-->
+        
+                   
 </body>
 </html>

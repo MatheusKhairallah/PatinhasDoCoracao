@@ -105,6 +105,7 @@
                 </div>
 
                 <div class="Campo_Preenchimento">
+                    <legend>Foto do cão</legend>
                     <input type="file" name="arquivo" placeholder="Foto do cão" id="arquivo" required>
                 </div>
 

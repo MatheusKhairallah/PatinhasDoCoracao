@@ -122,3 +122,19 @@ label {
     color: #FFFFF0;
     transition-duration: 0.3s;
   }
+
+/*Upload Perfil*/
+#arquivo, #criar_perfil{
+    border-width: 1px; border-style: solid; border-color: #A62D59d3; border-radius: 10px; padding: 10px 50px;
+    background-color: #a62d59d3;
+    font-size: 20px;
+    color: #0D0D0D;
+    font-weight: bold;
+    transition: all 1s ease 0s;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  #criar_perfil:hover {
+    color: #FFFFF0;
+    transition-duration: 0.3s;
+  }
