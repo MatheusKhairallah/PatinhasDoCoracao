@@ -33,11 +33,16 @@
           <div id="Campo_Preenchimento3">
             <button id="esqueci_senha" type="button">Esqueci a minha senha</button>
           </div>
+          <br/>
           <div id="Botoes">
-                <p class="facebook"><a href="#"><i class="fab fa-facebook-f"></i> Sign in with <b>Facebook</b></a></p>
-                <!-- <br> -->
-                <p class="google"><a href="#"><i class="fab fa-google"></i> Sign in with <b>Google</b></a></p>
-            </div>
+            <a href="#">
+              <button class="facebook"><i class="fab fa-facebook-f"></i> Sign in with <b>Facebook</b></button>
+            </a>
+
+            <a href="#">
+              <button class="google"><i class="fab fa-google"></i> Sign in with <b>Google</b></button>
+            </a>
+          </div>
         </form>
       </main>
 

@@ -127,9 +127,6 @@
             ©Companhia Thoth - 2021
         </div>
     </footer>
-
-    <!--Back-and-->
-        
-                   
+                  
 </body>
 </html>

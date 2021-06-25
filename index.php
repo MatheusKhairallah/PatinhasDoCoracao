@@ -41,10 +41,15 @@
                         <button id="logar" type="button">Já possui uma conta? Faça login!</button>
                     </a>
                 </div>
+                <br/>
                 <div id="Botoes">
-                    <p class="facebook"><a href="#"><i class="fab fa-facebook-f"></i> Sign in with <b>Facebook</b></a></p>
-                    <!-- <br> -->
-                    <p class="google"><a href="#"><i class="fab fa-google"></i> Sign in with <b>Google</b></a></p>
+                    <a href="#">
+                        <button class="facebook"><i class="fab fa-facebook-f"></i> Sign in with <b>Facebook</b></button>
+                    </a>
+
+                    <a href="#">
+                        <button class="google"><i class="fab fa-google"></i> Sign in with <b>Google</b></button>
+                    </a>
                 </div>
             </form>
         </main>
@@ -66,7 +71,7 @@
             </a>
         </aside>
     </div>
-
+    
     <footer>
         <!--Nome da empresa-->
         <div id="empresa">

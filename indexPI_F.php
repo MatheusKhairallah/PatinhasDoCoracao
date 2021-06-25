@@ -36,17 +36,12 @@
                     {
             ?>
 
-                <a href="indexAC.html">
+                <a href="indexAC.php?codigo= <?php echo $row['cd_dog']; ?>">
                     <img id="cão1" src="<?php echo $row['ds_img']; ?>" alt="Foto de cão">
                 </a>
             <?php
                     }
             ?>
-            </div>
-
-            <div>
-                
-            </div>
         </main>
 
         <nav>
