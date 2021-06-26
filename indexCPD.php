@@ -171,7 +171,7 @@
             <h2>Atenção!</h2>
             <p>
                 Olá usuário! Você só poderá cadastrar um cão por conta.
-                Fique a tento ao formulário abaixo.
+                Fique atento ao formulário abaixo.
             </p>
         </aside>
     </div>
