@@ -83,11 +83,11 @@ button {
 }
 
 /*Cães*/
-#caes {
+/*#caes {
     width: 360px;
-    /*display: flex;
-    flex-flow: column;*/
-}
+    display: flex;
+    flex-flow: column;
+}*/
 
 #cão1 {
     width: 180px;
